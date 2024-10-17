@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<!-- Mirrored from 16.171.16.192/node/27 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Oct 2024 02:14:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="Generator" content="Drupal 10 (https://www.org)" />
+
+
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidh18Smxg.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkido18Smxg.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidg18Smxg.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidv18Smxg.woff2) format('woff2');
+      unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidj18Smxg.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidi18Smxg.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18Q.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
+      unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+      unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <link rel="icon" href="sites/default/files/cwdb_0.html" type="image/jpeg" />
+
+  <style>
+    ul.dropdown-menu {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" media="all"
+    href="sites/default/files/css/css_7uHO35wFbLgUFnR5DScDj2BzH7AjjGAVVguA0MVuK6I1f80.css?delta=0&amp;language=en-gb&amp;theme=dxpr_theme&amp;include=eJyFUkFywyAM_JBVHzp9T0cY1SaDEEWiKXl9iQ-pnTrNhRG7Wq3YQZsa8ehQaXAiplYwv_25M6niTDpMUmhMUhhjuOwltxJOChGN1Lb8HMVhBLUWQ5oH_53Luy3E9A_z0eVUgCnV4SvQWcf1fGHxNdK205ea-4zclyw7vJewlrAQ-ickgEl-0sHiwp33b5PSJMljaQdutyzg9Rhe71vq9Fmpj6phn0lh3QIRm1TbItcUwILt17SWZe4-S3vyQg1-J0TPIR2EfSZ3XebBNFdDvEtgoZi7wRRRlfSBDlPg_nkmVZiqmvAPrMYFgA" />
+  <link rel="stylesheet" media="all"
+    href="sites/default/files/css/css_LI0JVj6DqRzS5QxdmGpgIvLvxvlJ5_GuS-1ufGQCmCU3566.css?delta=1&amp;language=en-gb&amp;theme=dxpr_theme&amp;include=eJyFUkFywyAM_JBVHzp9T0cY1SaDEEWiKXl9iQ-pnTrNhRG7Wq3YQZsa8ehQaXAiplYwv_25M6niTDpMUmhMUhhjuOwltxJOChGN1Lb8HMVhBLUWQ5oH_53Luy3E9A_z0eVUgCnV4SvQWcf1fGHxNdK205ea-4zclyw7vJewlrAQ-ickgEl-0sHiwp33b5PSJMljaQdutyzg9Rhe71vq9Fmpj6phn0lh3QIRm1TbItcUwILt17SWZe4-S3vyQg1-J0TPIR2EfSZ3XebBNFdDvEtgoZi7wRRRlfSBDlPg_nkmVZiqmvAPrMYFgA" />
+
+  <script src="themes/contrib/dxpr_theme/vendor/modernizr-custom-d8-dxpr-themead3d.html?v=3.11.7"></script>
+
+</head>
+
+<body
+  class="html path-frontpage body--dxpr-theme-header-top body--dxpr-theme-header-not-overlay body--dxpr-theme-header-normal">
+  <!-- <a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a> -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="dxpr-theme-boxed-container">
+
+      <header id="secondary-header" class="dxpr-theme-secondary-header clearfix hidden-none" role="banner">
+        <div class="dxpr-theme-fluid secondary-header-container">
+          <div class="region region-secondary-header">
+            <section class="views-element-container block block-views block-views-blocktop-banner-block-1 clearfix"
+              id="block-dxpr-theme-views-block-top-banner-block-1">
+              <div data-block="secondary_header">
+                <div
+                  class="view view-top-banner view-id-top_banner view-display-id-block_1 js-view-dom-id-795a0459dcb5787adcce9a8ea70341206be64f93f2542e9f20f46d88b6045ffa">
+                  <div class="view-content">
+                    <div class="views-row">
+                      <div class="views-field views-field-field-image">
+                        <div class="field-content">
+                          <img loading="lazy" src="banner1.png" width="1900" height="180" alt="banner1"
+                            class="img-fluid" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </header>
+
+      <header
+        class="navbar navbar dxpr-theme-header clearfix dxpr-theme-header--top dxpr-theme-header--centered-inline dxpr-theme-header--normal dxpr-theme-header--hover-border"
+        id="navbar" role="banner" style="margin-bottom: 46px;">
+        <div class="container navbar-container">
+          <div class="row container-row" style="
+    display: grid;
+    justify-content: center;">
+            <div class="col-sm-12 container-col">
+              <div class="navbar-header">
+                <a id="dxpr-theme-menu-toggle" href="#" class="three-dash"><span></span>
+                  <div class="screenreader-text visually-hidden">Toggle menu</div>
+                </a>
+              </div>
+
+              <nav role="navigation" id="dxpr-theme-main-menu" class="dxpr-theme-main-menu ">
+                <div class="region region-navigation-collapsible">
+
+                  <section id="block-dxpr-theme-main-menu"
+                    class="block block-system block-system-menu-blockmain clearfix">
+
+
+
+
+                    <ul data-block="navigation_collapsible" class="menu nav navbar-nav"
+                      style="display: flex; flex-direction: row; align-items: center; list-style-type: none; padding: 0; margin: 0; font-family: Arial, sans-serif; border-bottom: 2px solid #ccc;">
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px; position: relative;">
+                        <a href="index.html" class="parent_link is-active" data-drupal-link-system-path="&lt;front&gt;"
+                          style="text-decoration: none; color: #000;">Home</a>
+                      </li>
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px; position: relative;">
+                        <a href="26.html" class="dropdown-toggle" data-target="#"
+                          style="text-decoration: none; color: #000;">About Us</a>
+                        <ul data-block="navigation_collapsible" class="dropdown-menu"
+                          style="display: none; position: absolute; top: 100%; left: 0; list-style-type: none; padding: 10px; background-color: #fff; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);">
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="34.html" class="parent_link" data-drupal-link-system-path="34"
+                              style="text-decoration: none; color: #000;">Board Members</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="27.html" class="parent_link" data-drupal-link-system-path="27"
+                              style="text-decoration: none; color: #000;">Organization Chart</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="29.html" class="parent_link" data-drupal-link-system-path="29"
+                              style="text-decoration: none; color: #000;">Schemes</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="30.html" class="parent_link" data-drupal-link-system-path="30"
+                              style="text-decoration: none; color: #000;">FAQ</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px;">
+                        <a href="gallery.html" class="parent_link" data-drupal-link-system-path="gallery"
+                          style="text-decoration: none; color: #000;">Gallery</a>
+                      </li>
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px;">
+                        <a href="31.html" class="parent_link" data-drupal-link-system-path="31"
+                          style="text-decoration: none; color: #000;">Meetings</a>
+                      </li>
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px;">
+                        <a href="36.html" class="parent_link" data-drupal-link-system-path="36"
+                          style="text-decoration: none; color: #000;">RTI</a>
+                      </li>
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px; position: relative;">
+                        <a href="#" class="dropdown-toggle" data-target="#"
+                          style="text-decoration: none; color: #000;">OTHERS</a>
+                        <ul data-block="navigation_collapsible" class="dropdown-menu"
+                          style="display: none; position: absolute; top: 100%; left: 0; list-style-type: none; padding: 10px; background-color: #fff; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);">
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="https://woolboard.nic.in/ActivitiesCWDB.pdf" class="parent_link"
+                              style="text-decoration: none; color: #000;">Activities</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="28.html" class="parent_link" data-drupal-link-system-path="28"
+                              style="text-decoration: none; color: #000;">Citizens' Charter</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="35.html" class="parent_link" data-drupal-link-system-path="35"
+                              style="text-decoration: none; color: #000;">Beneficiaries</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="32.html" class="parent_link" title="Output-Outcome Monitoring Framework"
+                              data-drupal-link-system-path="32" style="text-decoration: none; color: #000;">O.O.M.F.</a>
+                          </li>
+                          <li class="expanded dropdown" style="margin: 0; padding: 5px 0;">
+                            <a href="33.html" class="parent_link" data-drupal-link-system-path="33"
+                              style="text-decoration: none; color: #000;">Tender Notice</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="expanded dropdown" style="margin-right: 20px; padding: 15px;">
+                        <a href="http://51.20.1.172:8000/" class="parent_link"
+                          style="text-decoration: none; color: #000;">Dashboard</a>
+                      </li>
+                    </ul>
+
+                    <script>
+                      // Simple JavaScript to handle hover for dropdowns
+                      document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+                        dropdown.addEventListener('mouseenter', function () {
+                          var submenu = this.querySelector('.dropdown-menu');
+                          if (submenu) submenu.style.display = 'block';
+                        });
+                        dropdown.addEventListener('mouseleave', function () {
+                          var submenu = this.querySelector('.dropdown-menu');
+                          if (submenu) submenu.style.display = 'none';
+                        });
+                      });
+                    </script>
+
+
+                  </section>
+                </div>
+                </nav>
+              </header>
+                <a href="#main-content" class="visually-hidden focusable">
+                  Skip to main content
+                </a>
+
+                <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+                  <div class="layout-container">
+
+                    <header role="banner">
+
+                    </header>
+  
+  
+
+  
+
+      <div class="wrap-containers">
+
+        <div class="region region-highlighted">
+          <section class="views-element-container block block-views block-views-blockslideshow-block-1 clearfix"
+            id="block-dxpr-theme-views-block-slideshow-block-1">
+
+
+
+            <div data-block="highlighted">
+              <div
+                class="view view-slideshow view-id-slideshow view-display-id-block_1 js-view-dom-id-bbd4a057a3bd6a8e0a87e755572766f54ae9d06ff65e006d43a2c2ccc4c311fe">
+
+
+
+                <div class="view-content">
+
+                  <div id="views-bootstrap-slideshow-block-1" class="carousel slide carousel-fade"
+                    data-bs-interval="5000" data-bs-ride="carousel" data-bs-pause="hover">
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img loading="lazy"
+                          src="sites/default/files/styles/slideshow/public/2024-04/pexels-andrea-piacquadio-3769010_0f6b2.jpg?itok=XHRCq7cj"
+                          width="1900" height="500" alt="slide2" class="img-fluid image-style-slideshow" />
+
+
+
+                      </div>
+                      <div class="carousel-item ">
+                        <img loading="lazy"
+                          src="sites/default/files/styles/slideshow/public/2024-04/pexels-maria-orlova-4946859_019f3.jpg?itok=rxheVdHd"
+                          width="1900" height="500" alt="slide3" class="img-fluid image-style-slideshow" />
+
+
+
+                      </div>
+                      <div class="carousel-item ">
+                        <img loading="lazy"
+                          src="sites/default/files/styles/slideshow/public/2024-04/pexels-quang-nguyen-vinh-3232019_166f0.jpg?itok=N8IPI15w"
+                          width="1900" height="500" alt="slide4" class="img-fluid image-style-slideshow" />
+
+
+
+                      </div>
+                      <div class="carousel-item ">
+                        <img loading="lazy"
+                          src="sites/default/files/styles/slideshow/public/2024-04/pexels-vlada-karpovich-5603269_1a127.jpg?itok=F6jw1f6k"
+                          width="1900" height="500" alt="slide5" class="img-fluid image-style-slideshow" />
+
+
+
+                      </div>
+                      <div class="carousel-item ">
+                        <img loading="lazy"
+                          src="sites/default/files/styles/slideshow/public/2024-04/pexels-quang-nguyen-vinh-2148933_00500.jpg?itok=LE8kAzRh"
+                          width="1900" height="500" alt="slide6" class="img-fluid image-style-slideshow" />
+
+
+
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#views-bootstrap-slideshow-block-1" role="button"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#views-bootstrap-slideshow-block-1" role="button"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+          <section class="views-element-container block block-views block-views-blockbanner-block-1 clearfix"
+            id="block-dxpr-theme-views-block-banner-block-1">
+
+
+
+            <div data-block="highlighted">
+              <div
+                class="view view-banner view-id-banner view-display-id-block_1 js-view-dom-id-2729c453ca9f55672c0ee915b0665336b26f73b6b1ad49e37dcabccf71127ffa">
+
+
+
+                <div class="view-content">
+                  <div class="views-row">
+                    <div class="views-field views-field-field-image">
+                      <div class="field-content"> <img loading="lazy"
+                          src="sites/default/files/2024-04/banner2.png" width="1900" height="279" alt="midbanner"
+                          class="img-fluid" />
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+        <div class="container content-top-container">
+          <div class="row container-row">
+            <div class="col-sm-12 container-col">
+              <div class="region region-content-top">
+                <section class="views-element-container block block-views block-views-blockcards-block-1 clearfix"
+                  id="block-dxpr-theme-views-block-cards-block-1">
+
+
+
+                  <div data-block="content_top">
+                    <div
+                      class="view view-cards view-id-cards view-display-id-block_1 js-view-dom-id-8e2903ccdcba83028cfa9745302b7b3364b0c7af3005b1dd438bd2a9c8c5d5b8">
+
+
+
+                      <div class="view-content">
+
+                        <div class="card-group">
+                          <div class="card">
+                            <img loading="lazy"
+                              src="sites/default/files/styles/large/public/2024-04/picture17cb7.jpg?itok=UgVZUQmh"
+                              width="480" height="480" alt="card1" class="img-fluid image-style-large" />
+
+
+
+                            <div class="card-body">
+
+                              <p><strong>Pashmina Goats in Changthang area of Leh district</strong></p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img loading="lazy"
+                              src="sites/default/files/styles/large/public/2024-04/picture25f69.jpg?itok=r-2H-r16"
+                              width="480" height="480" alt="card2" class="img-fluid image-style-large" />
+
+
+
+                            <div class="card-body">
+
+                              <p><strong>Pashmina Nomad weaving Pashmina item</strong></p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img loading="lazy"
+                              src="sites/default/files/styles/large/public/2024-04/picture356c8.jpg?itok=80XaBDIS"
+                              width="480" height="480" alt="card3" class="img-fluid image-style-large" />
+
+
+
+                            <div class="card-body">
+
+                              <p><strong>Training at Weaving &amp; Designing Training Centre, Kullu (HP)</strong></p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img loading="lazy"
+                              src="sites/default/files/styles/large/public/2024-04/picture437c4.jpg?itok=zjZZA-6E"
+                              width="480" height="480" alt="card4" class="img-fluid image-style-large" />
+
+
+
+                            <div class="card-body">
+
+                              <p><strong>Testing Equipment at Wool Testing Centre, Bikaner</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </section>
+                <div data-drupal-messages-fallback class="hidden"></div>
+                <section id="block-dxpr-theme-content" class="block block-system block-system-main-block clearfix">
+
+
+
+                  <div class="views-element-container">
+                    <div
+                      class="view view-frontpage view-id-frontpage view-display-id-page_1 js-view-dom-id-b1b28144e56977334804fb1bb1f9f553e5f374e0c88d58567becc745e4cc43c9">
+
+
+
+
+
+                    </div>
+                  </div>
+
+                </section>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div role="main" class="main-container container js-quickedit-main-content clearfix">
+          <div class="row">
+            <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+                <section class="views-element-container block block-views block-views-blocknews-block-1 clearfix"
+                  id="block-dxpr-theme-views-block-news-block-1">
+
+                  <h2 class="block-title">News</h2>
+
+
+                  <div data-block="sidebar_first">
+                    <div
+                      class="view view-news view-id-news view-display-id-block_1 js-view-dom-id-22604e61881826b40320456400d9a624afeb0e8100c6fbd941458595deee122d">
+
+
+
+                      <div class="view-content">
+
+                        <ul id="views-bootstrap-news-block-1"
+                          class="views-bootstrap-list-group views-view-list-group list-group">
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a href="https://woolboard.nic.in/download/Samarathform.pdf"><strong>Samarth Scheme
+                                      Form</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a href="https://woolboard.nic.in/download/proforma_accountant_Post.pdf"><strong>Performa
+                                      for the Post of Accountant</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a href="https://woolboard.nic.in/download/Adv_WMDO_Actt.pdf"><strong>Advertisement
+                                      of WMDO And Accountant</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a href="https://woolboard.nic.in/download/eoitoday.pdf"><strong>Study on Indian Wool
+                                      Sector and Vision 2030</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a
+                                    href="https://woolboard.nic.in/download/Application Performa Post of WMDO.pdf"><strong>Application
+                                      Performa for the Post of WMDO</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a href="https://woolboard.nic.in/Download/Guidelines_ProjectProposal.pdf"><strong>Circulation
+                                      of Guidelines for submission of new Project proposals</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a
+                                    href="https://woolboard.nic.in/Download/IntegratedWoolDevelopmentProgramme.pdf"><strong>Corregendum
+                                      - IWDP Guidelines</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                          <li class="list-group-item">
+                            <p class="list-group-item-text">
+                            <div class="views-field views-field-body">
+                              <div class="field-content">
+                                <p><a href="https://woolboard.nic.in/swatchtaseva18.htm"><strong>Swachhta Hi Seva
+                                      Campaign</strong></a></p>
+                              </div>
+                            </div>
+                            </p>
+                          </li>
+                        </ul>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </section>
+
+              </div>
+
+            </aside>
+
+
+            <section class="col-sm-9">
+
+
+
+
+              <a id="main-content"></a>
+              <div class="region region-content">
+                <section class="views-element-container block block-views block-views-blockschemes-block-1 clearfix"
+                  id="block-dxpr-theme-views-block-schemes-block-1">
+
+                  <h2 class="block-title">Schemes</h2>
+
+
+                  <div data-block="content">
+                    <div
+                      class="view view-schemes view-id-schemes view-display-id-block_1 js-view-dom-id-580aa2fd3e7ff0b9eafd71fd50a0c5e62fd77a2950412fcc2636d079ffa95a51">
+
+
+
+                      <div class="view-content">
+                        <div id="views-bootstrap-tab-views-bootstrap-schemes-block-1">
+                          <ul class="nav nav-tabs nav-justified">
+                            <li class="nav-item" role="presentation">
+                              <button data-bs-target="#tab-views-bootstrap-schemes-block-1-0" type="button" role="tab"
+                                aria-controls="tab-views-bootstrap-schemes-block-1-0" aria-selected="true"
+                                class="nav-link active" data-bs-toggle="tab">WMS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button data-bs-target="#tab-views-bootstrap-schemes-block-1-1" type="button" role="tab"
+                                aria-controls="tab-views-bootstrap-schemes-block-1-1" aria-selected="false"
+                                class="nav-link " data-bs-toggle="tab">HRD</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button data-bs-target="#tab-views-bootstrap-schemes-block-1-2" type="button" role="tab"
+                                aria-controls="tab-views-bootstrap-schemes-block-1-2" aria-selected="false"
+                                class="nav-link " data-bs-toggle="tab">PWDS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button data-bs-target="#tab-views-bootstrap-schemes-block-1-3" type="button" role="tab"
+                                aria-controls="tab-views-bootstrap-schemes-block-1-3" aria-selected="false"
+                                class="nav-link " data-bs-toggle="tab">WPS</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-views-bootstrap-schemes-block-1-0"
+                              role="tabpanel" aria-labelledby="tab-views-bootstrap-schemes-block-1-0-tab">
+                              <div class="views-field views-field-body">
+                                <div class="field-content">
+                                  <p>&nbsp;</p>
+                                  <h2><strong>Wool Marketing Scheme</strong></h2><img
+                                    data-entity-uuid="17f2ecb6-0b85-4d6b-b90e-9e3ae7b02808" data-entity-type="file"
+                                    src="sites/default/files/inline-images/Untitled2_4.png" alt="wms" width="576"
+                                    height="402" class="align-left" loading="lazy">
+                                  <h4>Sheep breeders belong to an unorganized sector who sell their wool in small
+                                    volumes.&nbsp;</h4>
+                                  <h4>In the present setup, sheep breeders are compelled to sell their produce at the
+                                    prices dictated by traders due to their economic compulsions, low contribution of
+                                    wool in the sheep economy &amp; low volume, and distant location of markets. The
+                                    prevailing system of wool marketing is less beneficial for the sheep breeders, and
+                                    the main share of the profit goes to the middlemen.&nbsp;</h4>
+                                  <h4>Therefore, there is a need to procure wool directly from the wool growers on a
+                                    fixed price by the State Govt. organizations. Financial assistance would be provided
+                                    to State Govt. organizations for procurement of wool at a fixed price directly from
+                                    wool growers.</h4>
+                                  <p>&nbsp;</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade " id="tab-views-bootstrap-schemes-block-1-1" role="tabpanel"
+                              aria-labelledby="tab-views-bootstrap-schemes-block-1-1-tab">
+                              <div class="views-field views-field-body">
+                                <div class="field-content">
+                                  <h2><strong>Human Resource Development &amp; Promotional Activities</strong>&nbsp;
+                                  </h2><img src="sites/default/files/inline-images/Untitled3.png"
+                                    data-entity-uuid="b5267dd5-5219-4021-bdd2-332cf0ed37e4" data-entity-type="file"
+                                    alt="hrd" width="577" height="416" class="align-left" loading="lazy">
+                                  <h4>&nbsp;</h4>
+                                  <h4>Indian handloom-made woolen products are in high demand in domestic and
+                                    international markets.</h4>
+                                  <h4>To manufacture these traditionally designed handloom products, special skills are
+                                    required. Presently, in the country, there is a shortage of skilled workers to
+                                    produce export-quality woolen handloom items. Under this component, it is intended
+                                    to impart training in skill up-gradation and development in handloom/carpet weaving,
+                                    knitting, and other woolen products manufacturing through training programmes. In
+                                    the project, assistance for product development and design development with the
+                                    designing software will also be provided.</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade " id="tab-views-bootstrap-schemes-block-1-2" role="tabpanel"
+                              aria-labelledby="tab-views-bootstrap-schemes-block-1-2-tab">
+                              <div class="views-field views-field-body">
+                                <div class="field-content">
+                                  <h2><strong>Pashmina Wool Development Scheme</strong></h2><img
+                                    src="sites/default/files/inline-images/Untitled4.png"
+                                    data-entity-uuid="170a03d1-2f4b-466f-8869-5abf6b9a415b" data-entity-type="file"
+                                    alt="pwds" width="571" height="416" class="align-left" loading="lazy">
+                                  <h4>&nbsp;</h4>
+                                  <h4>The aim of the sub-component is to purchase raw pashmina wool directly from
+                                    pashmina growers at a fixed price to prevent exploitation by middlemen.&nbsp;</h4>
+                                  <h4>The implementation of the component will also ensure the availability of raw
+                                    pashmina wool to pashmina product manufacturers throughout the year at a cheaper
+                                    rate.</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade " id="tab-views-bootstrap-schemes-block-1-3" role="tabpanel"
+                              aria-labelledby="tab-views-bootstrap-schemes-block-1-3-tab">
+                              <div class="views-field views-field-body">
+                                <div class="field-content">
+                                  <h2><strong>Wool Processing Scheme</strong></h2><img
+                                    src="sites/default/files/inline-images/Untitled1.png"
+                                    data-entity-uuid="2e9eda9a-7d12-4bde-b4bf-0373b84807de" data-entity-type="file"
+                                    alt="wool" width="580" height="463" class="align-left" loading="lazy">
+                                  <h4>&nbsp;</h4>
+                                  <h4>The Woollen industry suffers from inadequate and outdated processing facilities.
+                                    The pre-loom and post-loom facilities are required to be modernized to ensure
+                                    quality finished products.&nbsp;</h4>
+                                  <h4>Quality finishing of the woolen products will not only increase the use of
+                                    indigenous wool but will also make the product more competitive in the international
+                                    market. It will also assist in procuring better prices for wool growers and will
+                                    make quality raw materials available to the Khadi and Handloom sector. Owing to the
+                                    overall size of the woolen industry and the specialized nature of equipments
+                                    required for processing, the industry has been dependent on imported plants and
+                                    machinery.&nbsp;</h4>
+                                  <h4>With this view, setting up a Common Facility Centre for all kinds of wool and
+                                    woolen processing facilities like wool scouring, drying, carding, dyeing, knitting,
+                                    weaving, felting/non-woven, and finishing are proposed to be taken up by the CWDB
+                                    for the integrated processing of raw wool and woolens in wool producing and wool
+                                    trading areas. Establishing such plants/centers will increase wool processing
+                                    capacity and will result in value addition to the Indian wool industry, and will
+                                    create more employment opportunities and income generation in the country. Provision
+                                    for the construction of buildings for housing the plant and machinery has also been
+                                    made under this component.</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </section>
+
+              </div>
+
+            </section>
+
+          </div><!-- end .ow -->
+        </div><!-- end main-container -->
+
+      </div>
+
+      <footer class="dxpr-theme-footer clearfix" role="contentinfo">
+        <div class="dxpr-theme-fluid footer-container">
+          <div class="region region-footer">
+
+            <section id="block-dxpr-theme-footer" class="block block-system block-system-menu-blockfooter clearfix">
+
+
+
+
+              <ul data-block="footer" class="nav navbar-nav">
+                <li class="nav-item">
+                  <a href="node/37.html" class="nav-link" data-drupal-link-system-path="node/37">Contact</a>
+                </li>
+              </ul>
+
+
+
+            </section>
+            <section id="block-dxpr-theme-poweredbydrupal"
+              class="block block-system block-system-powered-by-block clearfix">
+
+
+
+              <!-- <span>Powered by <a href="https://www.drupal.org/">Drupal</a></span> -->
+            </section>
+
+          </div>
+
+        </div>
+      </footer>
+
+    </div><!-- end dxpr-theme-boxed-container -->
+
+  </div>
+
+  <script type="application/json"
+    data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en-gb"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"dxpr_themeSettings":{"breadcrumbsSeparator":"\/","headerHeight":"50","headerOffset":"60","headerMobileHeight":"60","headerSideDirection":"left","hamburgerAnimation":"cross"},"user":{"uid":0,"permissionsHash":"98de651ad52621c1fe1bf8955f38e342cbfeb561f71e31bd0911989d7a1e7564"}}</script>
+  <script
+    src="sites/default/files/js/js_h2_ZGVstyeBUROAJ9NUx4YzdsUAT0_rracM0d2L5zI84b51.js?scope=footer&amp;delta=0&amp;language=en-gb&amp;theme=dxpr_theme&amp;include=eJyFUkFywyAM_JBVHzp9T0cY1SaDEEWiKXl9iQ-pnTrNhRG7Wq3YQZsa8ehQaXAiplYwv_25M6niTDpMUmhMUhhjuOwltxJOChGN1Lb8HMVhBLUWQ5oH_53Luy3E9A_z0eVUgCnV4SvQWcf1fGHxNdK205ea-4zclyw7vJewlrAQ-ickgEl-0sHiwp33b5PSJMljaQdutyzg9Rhe71vq9Fmpj6phn0lh3QIRm1TbItcUwILt17SWZe4-S3vyQg1-J0TPIR2EfSZ3XebBNFdDvEtgoZi7wRRRlfSBDlPg_nkmVZiqmvAPrMYFgA"></script>
+
+  <div class="hidden" id="dxpr-theme-js-seed">sfy39587stp18</div>
+</body>
+
+<!-- Mirrored from 16.171.16.192/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Oct 2024 02:14:23 GMT -->
+
+</html>
