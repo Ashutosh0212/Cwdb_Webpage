@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import Link from 'next/link';
 
 export default function SchemesPage() {
   const { t, language } = useLanguage();
@@ -12,8 +13,44 @@ export default function SchemesPage() {
           {language === 'en' ? 'Schemes' : 'योजनाएं'}
         </h1>
         
+        {/* Integrated Wool Development Programme Section */}
+        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            {language === 'en' ? 'Integrated Wool Development Programme (IWDP)' : 'एकीकृत ऊन विकास कार्यक्रम (IWDP)'}
+          </h2>
+          <h4 className="text-xl font-semibold mb-4 text-gray-700">
+            {language === 'en' ? 'Important Documents' : 'महत्वपूर्ण दस्तावेज'}
+          </h4>
+          <ul className="list-none space-y-4 mt-4">
+            <li>
+              <Link 
+                href="/files/Guidelines_ProjectProposal.pdf"
+                className="text-blue-600 hover:text-blue-800 hover:underline font-semibold text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {language === 'en' 
+                  ? '1. IWDP Guidelines for New Project Proposals (FY 2021-22 to 2025-26)'
+                  : '1. नई परियोजना प्रस्तावों के लिए IWDP दिशानिर्देश (FY 2021-22 से 2025-26 तक)'}
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/files/IntegratedWoolDevelopmentProgramme.pdf"
+                className="text-blue-600 hover:text-blue-800 hover:underline font-semibold text-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {language === 'en' 
+                  ? '2. Corregendum - IWDP Guidelines'
+                  : '2. सुधार - IWDP दिशानिर्देश'}
+              </Link>
+            </li>
+          </ul>
+        </div>
+        
+        {/* Scheme Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Scheme Cards */}
           {[
             {
               title: language === 'en' ? 'Wool Marketing Scheme' : 'ऊन विपणन योजना',
