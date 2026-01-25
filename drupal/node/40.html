@@ -31,6 +31,65 @@
       display: none;
     }
   </style>
+  <style>
+    /* Language Switcher Styles */
+    .language-switcher {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 1050;
+      display: flex;
+      gap: 5px;
+    }
+    
+    .lang-btn {
+      padding: 8px 16px;
+      border: 2px solid #007bff;
+      background-color: #fff;
+      color: #007bff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .lang-btn:hover {
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .lang-btn.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+    
+    @media (max-width: 991px) {
+      .language-switcher {
+        position: relative;
+        top: auto;
+        right: auto;
+        justify-content: flex-end;
+        padding: 10px 15px;
+        background-color: #f8f9fa;
+        margin-bottom: 10px;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .language-switcher {
+        padding: 8px 10px;
+      }
+      
+      .lang-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+    }
+  </style>
   <link rel="stylesheet" media="all"
     href="sites/default/files/css/css_7uHO35wFbLgUFnR5DScDj2BzH7AjjGAVVguA0MVuK6I1f80.css?delta=0&amp;language=en-gb&amp;theme=dxpr_theme&amp;include=eJyFUkFywyAM_JBVHzp9T0cY1SaDEEWiKXl9iQ-pnTrNhRG7Wq3YQZsa8ehQaXAiplYwv_25M6niTDpMUmhMUhhjuOwltxJOChGN1Lb8HMVhBLUWQ5oH_53Luy3E9A_z0eVUgCnV4SvQWcf1fGHxNdK205ea-4zclyw7vJewlrAQ-ickgEl-0sHiwp33b5PSJMljaQdutyzg9Rhe71vq9Fmpj6phn0lh3QIRm1TbItcUwILt17SWZe4-S3vyQg1-J0TPIR2EfSZ3XebBNFdDvEtgoZi7wRRRlfSBDlPg_nkmVZiqmvAPrMYFgA" />
   <link rel="stylesheet" media="all"
@@ -98,8 +157,13 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" role="banner">
-  <div class="container navbar-container">
+<header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" role="banner" style="position: relative;">
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <button class="lang-btn" id="lang-en" onclick="switchLanguage('en')">English</button>
+    <button class="lang-btn" id="lang-hi" onclick="switchLanguage('hi')">हिंदी</button>
+  </div>
+<div class="container navbar-container">
     <div class="row w-100">
       <!-- Navbar Toggle for Mobile View (Left aligned) -->
       <div class="col-6 d-lg-none">
