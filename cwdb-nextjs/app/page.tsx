@@ -42,6 +42,18 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Answer Key of question for MTS post exam held on 24-01-2026', 
+      link: '/files/Answer Key of question for MTS post exam held on 24-01-2026.pdf' 
+    },
+    { 
+      text: 'Instruction to raise an objection on question and answer for the post of MTS, ISC, CWDB', 
+      link: '/files/Instruction to raise an objection on question and answer for the post of MTS, ISC, CWDB.pdf' 
+    },
+    { 
+      text: 'Question Paper for MTS post exam held on 24-01-2026', 
+      link: '/files/Question Paper for MTS post exam held on 24-01-2026.pdf' 
+    },
+    { 
       text: language === 'en' 
         ? 'Please visit the website regularly since all subsequent Corrigendum/ addendum/ updates will be uploaded on website only.' 
         : 'कृपया वेबसाइट को नियमित रूप से देखें क्योंकि सभी बाद के सुधार/परिशिष्ट/अपडेट केवल वेबसाइट पर अपलोड किए जाएंगे।', 
