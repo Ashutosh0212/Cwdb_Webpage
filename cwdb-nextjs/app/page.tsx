@@ -42,7 +42,7 @@ export default function HomePage() {
 
   const newsItems = [
     { 
-      text: 'Admission notice of new batch for training in weaving and designing at WDTC', 
+      text: 'Admission notice of new batch for training in weaving and designing at WDTC, Kullu, HP', 
       link: '/files/Admission Notice of new batch for training in weaving and designing at WDTC Kullu HP.pdf' 
     },
     { 
