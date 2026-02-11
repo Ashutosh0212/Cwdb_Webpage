@@ -42,6 +42,10 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Admission notice of new batch for training in weaving and designing at WDTC', 
+      link: '/files/Admission Notice of new batch for training in weaving and designing at WDTC Kullu HP.pdf' 
+    },
+    { 
       text: 'Answer Key of question for MTS post exam held on 24-01-2026', 
       link: '/files/Answer Key of question for MTS post exam held on 24-01-2026.pdf' 
     },
