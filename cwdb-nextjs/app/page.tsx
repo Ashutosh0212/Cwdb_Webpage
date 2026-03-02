@@ -43,7 +43,7 @@ export default function HomePage() {
   const newsItems = [
     { 
       text: 'Final Answer Key for post of MTS, CWDB', 
-      link: '/files/Final Answer Key.pdf' 
+      link: '/files/Final Answer key.pdf' 
     },
     { 
       text: 'Admission notice of new batch for training in weaving and designing at WDTC, Kullu, HP', 

@@ -10,7 +10,7 @@ export default function RecruitmentPage() {
     {
       no: 1,
       description: 'Final Answer Key for post of MTS, CWDB',
-      link: '/files/Final Answer Key.pdf',
+      link: '/files/Final Answer key.pdf',
     },  
     {
       no: 2,
