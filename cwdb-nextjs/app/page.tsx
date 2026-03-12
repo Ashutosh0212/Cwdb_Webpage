@@ -42,9 +42,15 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Office Speaking Order-Final Speaking Order on Blacklisting of Naman Seva Samiti', 
+      link: '/files/2509-2516.pdf' 
+    },
+    
+    { 
       text: 'Final Answer Key for post of MTS, CWDB', 
       link: '/files/Final Answer key.pdf' 
     },
+    
     { 
       text: 'Admission notice of new batch for training in weaving and designing at WDTC, Kullu, HP', 
       link: '/files/Admission Notice of new batch for training in weaving and designing at WDTC Kullu HP.pdf' 
