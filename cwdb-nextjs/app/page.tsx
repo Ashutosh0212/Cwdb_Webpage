@@ -42,6 +42,11 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Result of written examination held on 24-01-2026 for the post of MTS, ISC, CWDB', 
+      link: '/files/Result of MTS for Skill Test.pdf' 
+    },
+    
+    { 
       text: 'Office Speaking Order-Final Speaking Order on Blacklisting of Naman Seva Samiti', 
       link: '/files/2509-2516.pdf' 
     },
