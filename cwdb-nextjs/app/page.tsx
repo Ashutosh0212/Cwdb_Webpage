@@ -42,6 +42,10 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Advertisement Notice for engagement of one Young Professional (YP) in CWDB, MoT', 
+      link: '/files/YP Advertisment Notice CWDB.pdf' 
+    },
+    { 
       text: 'Result of written examination held on 24-01-2026 for the post of MTS, ISC, CWDB', 
       link: '/files/Result of MTS for Skill Test.pdf' 
     },
