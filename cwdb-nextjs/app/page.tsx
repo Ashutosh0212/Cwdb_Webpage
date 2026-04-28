@@ -42,12 +42,8 @@ export default function HomePage() {
 
   const newsItems = [
     { 
-      text: 'Advertisement Notice in Hindi for engagement of one Yound Professional (YP) in CWDB, MoT', 
-      link: '/files/Adv Young Professional Hindi notice.pdf ' 
-    },
-    { 
-      text: 'Advertisement Notice for engagement of one Young Professional (YP) in CWDB, MoT', 
-      link: '/files/YP Advertisment Notice CWDB.pdf' 
+      text: 'Advertisement Notice for engagement of one Young Professional (YP) in CWDB, MoT New Delhi', 
+      link: '/files/YP engagement Advertisement bilingual.pdf' 
     },
     { 
       text: 'Result of written examination held on 24-01-2026 for the post of MTS, ISC, CWDB', 
