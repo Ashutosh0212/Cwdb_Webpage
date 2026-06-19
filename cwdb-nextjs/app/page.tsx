@@ -42,6 +42,12 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Advertisement Notice for engagement of two Young Professionals (YP) for CWDB Jodhpur office', 
+      link: '/files/Adv Notice for engagement of two Young Professional in CWDB Jodhpur.pdf' 
+    },
+    
+    
+    { 
       text: 'Advertisement Notice for engagement of one Young Professional (YP) in CWDB, MoT New Delhi', 
       link: '/files/YP engagement Advertisement bilingual.pdf' 
     },
@@ -62,7 +68,7 @@ export default function HomePage() {
     
     { 
       text: 'Admission notice of new batch for training in weaving and designing at WDTC, Kullu, HP', 
-      link: '/files/Admission Notice of new batch for training in weaving and designing at WDTC Kullu HP.pdf' 
+      link: '/files/Admission Notice for new batch of WDTC Kullu.pdf' 
     },
     { 
       text: 'Answer Key of question for MTS post exam held on 24-01-2026', 
