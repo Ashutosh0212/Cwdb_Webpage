@@ -42,6 +42,10 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Invitation of quotation for purchase of Woollen Laptop Sleeves', 
+      link: '/files/Invitation of Quotation for Woollen Laptop Sleeves.pdf' 
+    },
+    { 
       text: 'Advertisement Notice for engagement of two Young Professionals (YP) for CWDB Jodhpur office', 
       link: '/files/Adv Notice for engagement of two Young Professional in CWDB Jodhpur.pdf' 
     },
