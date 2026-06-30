@@ -1,9 +1,18 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import Link from 'next/link';
 
 export default function RTIPage() {
   const { language } = useLanguage();
+
+  const documents = [
+    {
+      no: 1,
+      name: 'Designate Authority for the Right to Information',
+      file: '/files/Designate Authority for the Right to Information.pdf',
+    },
+  ];
 
   const contacts = [
     {
@@ -78,6 +87,43 @@ export default function RTIPage() {
                   <td className="border border-gray-300 px-4 py-2">{contact.address}</td>
                   <td className="border border-gray-300 px-4 py-2">{contact.contact}</td>
                   <td className="border border-gray-300 px-4 py-2">{contact.email}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-md p-8 mt-8">
+        <h2 className="text-2xl font-bold mb-6">
+          {language === 'en' ? 'RTI Documents' : 'RTI दस्तावेज़'}
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left">
+                  {language === 'en' ? 'No.' : 'क्रमांक'}
+                </th>
+                <th className="border border-gray-300 px-4 py-2 text-left">
+                  {language === 'en' ? 'Document' : 'दस्तावेज़'}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {documents.map((doc) => (
+                <tr key={doc.no}>
+                  <td className="border border-gray-300 px-4 py-2">{doc.no}</td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    <Link
+                      href={doc.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline font-semibold"
+                    >
+                      {doc.name}
+                    </Link>
+                  </td>
                 </tr>
               ))}
             </tbody>
