@@ -10,7 +10,17 @@ export default function RTIPage() {
     {
       no: 1,
       name: 'Designate Authority for the Right to Information',
-      file: '/files/Designate Authority for the Right to Information.pdf',
+      file: '/files/BP-30M31_20260707_134712.pdf',
+    },
+    {
+      no: 2,
+      name: 'RTI Quarter wise report',
+      file: '/files/rti1.pdf',
+    },
+    {
+      no: 3,
+      name: 'RTI Quarter wise report for the year 2025-2026',
+      file: '/files/rti2.pdf',
     },
   ];
 
