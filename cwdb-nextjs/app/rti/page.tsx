@@ -54,11 +54,13 @@ export default function RTIPage() {
       email: '',
     },
     {
-      designation: 'Adm. Officer',
-      name: '-',
-      address: '-',
-      contact: '-',
-      email: '-',
+      designation: language === 'en' ? 'Adm. Officer' : 'प्रशासनिक अधिकारी',
+      name: 'Ashawani Purohit',
+      address: language === 'en'
+        ? 'First Floor, BSNL Building, Manji ka Hatha, Paota, Jodhpur 342006'
+        : 'प्रथम तल, बीएसएनएल भवन, मंजी का हाथा, पाओटा, जोधपुर 342006',
+      contact: '0291-2433967',
+      email: 'woolboard-textiles@gov.in',
     },
   ];
 
