@@ -9,16 +9,26 @@ export default function RTIPage() {
   const documents = [
     {
       no: 1,
+      name: 'RTI Information Manual',
+      file: '/files/RTI Informatio Manual CWDB.pdf',
+    },
+    {
+      no: 2,
+      name: 'Citizen Charter',
+      file: '/files/Citizen Charter RTI CWDB.pdf',
+    },
+    {
+      no: 3,
       name: 'Designate Authority for the Right to Information',
       file: '/files/BP-30M31_20260707_134712.pdf',
     },
     {
-      no: 2,
+      no: 4,
       name: 'RTI Quarter wise report',
       file: '/files/rti1.pdf',
     },
     {
-      no: 3,
+      no: 5,
       name: 'RTI Quarter wise report for the year 2025-2026',
       file: '/files/rti2.pdf',
     },
