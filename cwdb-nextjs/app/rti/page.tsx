@@ -9,8 +9,28 @@ export default function RTIPage() {
   const documents = [
     {
       no: 1,
+      name: 'RTI Information Manual',
+      file: '/files/RTI Informatio Manual CWDB.pdf',
+    },
+    {
+      no: 2,
+      name: 'Citizen Charter',
+      file: '/files/Citizen Charter RTI CWDB.pdf',
+    },
+    {
+      no: 3,
       name: 'Designate Authority for the Right to Information',
-      file: '/files/Designate Authority for the Right to Information.pdf',
+      file: '/files/BP-30M31_20260707_134712.pdf',
+    },
+    {
+      no: 4,
+      name: 'RTI Quarter wise report',
+      file: '/files/rti1.pdf',
+    },
+    {
+      no: 5,
+      name: 'RTI Quarter wise report for the year 2025-2026',
+      file: '/files/rti2.pdf',
     },
   ];
 
@@ -44,11 +64,13 @@ export default function RTIPage() {
       email: '',
     },
     {
-      designation: 'Adm. Officer',
-      name: '-',
-      address: '-',
-      contact: '-',
-      email: '-',
+      designation: language === 'en' ? 'Adm. Officer' : 'प्रशासनिक अधिकारी',
+      name: 'Ashawani Purohit',
+      address: language === 'en'
+        ? 'First Floor, BSNL Building, Manji ka Hatha, Paota, Jodhpur 342006'
+        : 'प्रथम तल, बीएसएनएल भवन, मंजी का हाथा, पाओटा, जोधपुर 342006',
+      contact: '0291-2433967',
+      email: 'woolboard-textiles@gov.in',
     },
   ];
 
