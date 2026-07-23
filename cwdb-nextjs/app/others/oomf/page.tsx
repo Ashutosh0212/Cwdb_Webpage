@@ -6,6 +6,14 @@ import Link from 'next/link';
 export default function OOMFPage() {
   const { language } = useLanguage();
 
+  const documents = [
+    {
+      no: 1,
+      description: 'OOMF-IWDP-CWDB 2025-26',
+      link: '/files/OOMF-IWDP-CWDB 2025-26 (1).pdf',
+    },
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       <div className="bg-white rounded-lg shadow-md p-8">
@@ -28,11 +36,24 @@ export default function OOMFPage() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td colSpan={3} className="border border-gray-300 px-4 py-2 text-center text-gray-500">
-                  {language === 'en' ? 'No documents available' : 'कोई दस्तावेज़ उपलब्ध नहीं'}
-                </td>
-              </tr>
+              {documents.map((row) => (
+                <tr key={row.no}>
+                  <td className="border border-gray-300 px-4 py-2">{row.no}</td>
+                  <td className="border border-gray-300 px-4 py-2">{row.description}</td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    <Link
+                      href={row.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline font-semibold"
+                    >
+                      {language === 'en'
+                        ? 'View Document'
+                        : 'दस्तावेज़ देखें'}
+                    </Link>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
