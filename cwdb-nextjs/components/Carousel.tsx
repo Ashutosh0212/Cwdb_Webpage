@@ -3,10 +3,13 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-const carouselImages = [
-  { src: '/images/banner_bg44 (2).jpg', alt: 'Pariksha Charcha' },
-  { src: '/images/Bharat_tex.jpeg', alt: 'Bharat Tex', link: 'https://www.bharat-tex.com/' },
-  { src: '/images/pexels-andrea-piacquadio-3769010_0f6b2.jpg', alt: 'Slide 2' },
+type CarouselImage = {
+  src: string;
+  alt: string;
+  link?: string;
+};
+
+const carouselImages: CarouselImage[] = [
   { src: '/images/pexels-maria-orlova-4946859_019f3.jpg', alt: 'Slide 3' },
   { src: '/images/pexels-quang-nguyen-vinh-3232019_166f0.jpg', alt: 'Slide 4' },
   { src: '/images/pexels-vlada-karpovich-5603269_1a127.jpg', alt: 'Slide 5' },
