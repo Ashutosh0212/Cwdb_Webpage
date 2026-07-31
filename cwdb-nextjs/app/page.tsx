@@ -42,6 +42,10 @@ export default function HomePage() {
 
   const newsItems = [
     { 
+      text: 'Result of test (Written test held on 24-01-2026 and skill test on 2/3 June, 2026) to fill up one post of MTS, CWDB', 
+      link: '/files/631.pdf' 
+    },
+    { 
       text: 'Invitation of quotation for purchase of Woollen Laptop Sleeves', 
       link: '/files/Invitation of Quotation for Woollen Laptop Sleeves.pdf' 
     },
