@@ -10,6 +10,7 @@ type CarouselImage = {
 };
 
 const carouselImages: CarouselImage[] = [
+  { src: '/images/OPEN FILE.jpeg', alt: 'Slide 2' },
   { src: '/images/pexels-maria-orlova-4946859_019f3.jpg', alt: 'Slide 3' },
   { src: '/images/pexels-quang-nguyen-vinh-3232019_166f0.jpg', alt: 'Slide 4' },
   { src: '/images/pexels-vlada-karpovich-5603269_1a127.jpg', alt: 'Slide 5' },
