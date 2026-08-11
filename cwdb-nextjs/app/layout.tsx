@@ -26,6 +26,7 @@ const CONTENT_SECURITY_POLICY = [
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
   "connect-src 'self'",
+  "frame-src 'self' https://drive.google.com https://docs.google.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

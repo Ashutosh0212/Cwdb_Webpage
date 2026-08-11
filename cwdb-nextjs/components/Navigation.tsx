@@ -28,6 +28,7 @@ export default function Navigation() {
       label: t('nav.gallery'),
       dropdown: [
         { href: '/gallery/wool', label: t('nav.gallery.wool') },
+        { href: '/gallery/wool-success-stories', label: t('nav.gallery.successStories') },
         { href: '/gallery/other-events', label: t('nav.gallery.events') },
       ],
     },
@@ -65,7 +66,7 @@ export default function Navigation() {
                       <span className="ml-1 text-xs">▼</span>
                     </button>
                     {openDropdown === item.label && (
-                      <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg py-1 z-50">
                         {item.dropdown.map((subItem, subIndex) => (
                           <Link
                             key={subIndex}
