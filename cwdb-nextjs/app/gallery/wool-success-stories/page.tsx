@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 type VideoLang = 'en' | 'hi' | 'both';
@@ -85,10 +85,15 @@ const videos: SuccessStoryVideo[] = [
 export default function WoolSuccessStoriesPage() {
   const { language } = useLanguage();
   const [filter, setFilter] = useState<Filter>('hi');
+  const [playingId, setPlayingId] = useState<string | null>(null);
 
   const filteredVideos = useMemo(() => {
     if (filter === 'all') return videos;
     return videos.filter((video) => video.lang === filter || video.lang === 'both');
+  }, [filter]);
+
+  useEffect(() => {
+    setPlayingId(null);
   }, [filter]);
 
   const filters: { key: Filter; labelEn: string; labelHi: string }[] = [
@@ -122,24 +127,70 @@ export default function WoolSuccessStoriesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filteredVideos.map((video) => (
-            <div key={video.id} className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-100">
-              <div className="relative w-full aspect-video bg-black">
-                <iframe
-                  src={`https://drive.google.com/file/d/${video.id}/preview?autoplay=1`}
-                  title={language === 'en' ? video.titleEn : video.titleHi}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-                  allowFullScreen
-                />
+          {filteredVideos.map((video) => {
+            const title = language === 'en' ? video.titleEn : video.titleHi;
+            const isPlaying = playingId === video.id;
+
+            return (
+              <div
+                key={video.id}
+                className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-100"
+              >
+                <div className="relative w-full aspect-video overflow-hidden bg-black">
+                  {isPlaying ? (
+                    <>
+                      {/* Clip iframe top-right so Drive pop-out cannot show through */}
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          clipPath:
+                            'polygon(0% 0%, calc(100% - 64px) 0%, calc(100% - 64px) 64px, 100% 64px, 100% 100%, 0% 100%)',
+                        }}
+                      >
+                        <iframe
+                          src={`https://drive.google.com/file/d/${video.id}/preview`}
+                          title={title}
+                          className="absolute inset-0 h-full w-full border-0"
+                          allow="autoplay; encrypted-media; fullscreen"
+                          allowFullScreen
+                        />
+                      </div>
+                      {/* Cover clipped corner with board logo */}
+                      <img
+                        src="/woolboardLogo.png"
+                        alt=""
+                        aria-hidden="true"
+                        className="pointer-events-none absolute right-0 top-0 z-20 h-16 w-16 bg-white object-contain p-1"
+                      />
+                    </>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setPlayingId(video.id)}
+                      className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-gray-800 to-black transition-opacity hover:opacity-95"
+                      aria-label={
+                        language === 'en' ? `Play ${video.titleEn}` : `${video.titleHi} चलाएँ`
+                      }
+                    >
+                      <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-blue-700 shadow-lg">
+                        <svg
+                          className="ml-1 h-8 w-8"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </span>
+                    </button>
+                  )}
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-center text-gray-800">{title}</h3>
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-center text-gray-800">
-                  {language === 'en' ? video.titleEn : video.titleHi}
-                </h3>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
