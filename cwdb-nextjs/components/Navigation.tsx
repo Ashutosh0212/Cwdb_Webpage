@@ -41,6 +41,7 @@ export default function Navigation() {
         { href: '/others/tender-notice', label: t('nav.others.tender') },
         { href: '/others/tenders-of-ia', label: t('nav.others.tenderia') },
         { href: '/others/annual-reports', label: t('nav.others.annualreports') },
+        { href: '/others/other-important-reports', label: t('nav.others.importantreports') },
       ],
     },
     { href: '/contact', label: t('nav.contact') },
