@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-export default function OtherEventsGalleryPage() {
+export default function ImportantEventsPage() {
   const { language } = useLanguage();
 
   // Images from https://woolboard.in/drupal/node/44.html
@@ -18,7 +18,7 @@ export default function OtherEventsGalleryPage() {
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       <div className="bg-white rounded-lg shadow-md p-8">
         <h1 className="text-3xl font-bold mb-6 text-center">
-          {language === 'en' ? 'Other Events Gallery' : 'अन्य कार्यक्रम गैलरी'}
+          {language === 'en' ? 'Important Events' : 'महत्वपूर्ण कार्यक्रम'}
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {eventImages.map((image, index) => (
