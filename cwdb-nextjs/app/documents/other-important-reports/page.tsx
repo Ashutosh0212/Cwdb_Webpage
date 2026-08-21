@@ -15,6 +15,30 @@ export default function OtherImportantReportsPage() {
           : 'चिंतन शिविर 2026',
       link: '/files/19thMay26ChintanShivir2026-fullbookwithcover-19-5-26_Confirmationmail.pdf',
     },
+    {
+      no: 2,
+      description:
+        language === 'en'
+          ? 'CWDB Coffee Table Book-2024'
+          : 'CWDB कॉफी टेबल बुक-2024',
+      link: '/files/CWDB Coffee Table Book-2024.pdf',
+    },
+    {
+      no: 3,
+      description:
+        language === 'en'
+          ? 'CWDB EKTA Event Ladakh-2025 Report'
+          : 'CWDB एकता इवेंट लद्दाख-2025 रिपोर्ट',
+      link: '/files/CWDB EKTA Event Ladakh-2025 Report.pdf',
+    },
+    {
+      no: 4,
+      description:
+        language === 'en'
+          ? 'CWDB Actionable Insights from the 93rd IWTO Congress and Collaborative Strategies with Australia-2024'
+          : 'CWDB 93वें IWTO कांग्रेस से व्यावहारिक अंतर्दृष्टि और ऑस्ट्रेलिया के साथ सहयोगात्मक रणनीतियाँ-2024',
+      link: '/files/CWDB_Actionable Insights from the 93rd IWTO Congress and Collaborative Strategies with Australia-2024.pdf',
+    },
   ];
 
   return (
