@@ -55,8 +55,9 @@ cwdb-nextjs/
 - `/about/whoswho` - Who's Who
 - `/about/orgchart` - Organization Chart
 - `/about/board` - Board Members
-- `/gallery/wool` - Wool Gallery
-- `/gallery/events` - Other Events
+- `/media/wool-photos` - Wool Photos
+- `/media/wool-success-stories` - Wool Success Stories
+- `/media/important-events` - Important Events
 - `/rules` - Rules and Regulations
 - `/rti` - RTI Information
 - `/contact` - Contact Us
