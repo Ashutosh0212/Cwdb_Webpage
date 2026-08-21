@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 type VideoLang = 'en' | 'hi' | 'both';
@@ -11,6 +12,7 @@ interface SuccessStoryVideo {
   titleEn: string;
   titleHi: string;
   lang: VideoLang;
+  thumbnail: string;
 }
 
 const videos: SuccessStoryVideo[] = [
@@ -19,66 +21,77 @@ const videos: SuccessStoryVideo[] = [
     titleEn: 'Bikaner Chokla Wool CWDB (English)',
     titleHi: 'बीकानेर चोकला ऊन CWDB (अंग्रेज़ी)',
     lang: 'en',
+    thumbnail: '/videos/Bikaner Chokla Wool CWDB.jpeg',
   },
   {
     id: '14WW90NjuAaQEipV9IwYpb02qQFhZemH1',
     titleEn: 'Bikaner Chokla Wool CWDB (Hindi)',
     titleHi: 'बीकानेर चोकला ऊन CWDB (हिंदी)',
     lang: 'hi',
+    thumbnail: '/videos/Bikaner Chokla Wool CWDB.jpeg',
   },
   {
     id: '1Yl81WH3bFB0ND_Q7GlK_mKQ990GhzlJI',
     titleEn: 'CWDB Industrial Product Display',
     titleHi: 'CWDB औद्योगिक उत्पाद प्रदर्शन',
     lang: 'both',
+    thumbnail: '/videos/CWDB Industrial Product Display.jpeg',
   },
   {
     id: '1SSg6adUoPVK8IqTOw-JkSiop66Yvu44y',
     titleEn: 'Kashmir Pashmina Shawl (English)',
     titleHi: 'कश्मीर पश्मीना शॉल (अंग्रेज़ी)',
     lang: 'en',
+    thumbnail: '/videos/Kashmir Pashmina Shawl.jpeg',
   },
   {
     id: '1b89Lh0fUASIcwXiQsahYBJs2H0goFW9m',
     titleEn: 'Kashmir Pashmina Shawl (Hindi)',
     titleHi: 'कश्मीर पश्मीना शॉल (हिंदी)',
     lang: 'hi',
+    thumbnail: '/videos/Kashmir Pashmina Shawl.jpeg',
   },
   {
     id: '1LHhifMIrcgYNcTvX1qTCOtGV4xcUO1d9',
     titleEn: 'Kullu Shawl (English)',
     titleHi: 'कुल्लू शॉल (अंग्रेज़ी)',
     lang: 'en',
+    thumbnail: '/videos/Kullu Shawl.jpeg',
   },
   {
     id: '1m4i23dtHk_i5E4kmRDvNVrFRS2u0vVFo',
     titleEn: 'Kullu Shawl (Hindi)',
     titleHi: 'कुल्लू शॉल (हिंदी)',
     lang: 'hi',
+    thumbnail: '/videos/Kullu Shawl.jpeg',
   },
   {
     id: '1Xs7o72xrlgkboLUbnFCL5xvPwmmnIjMV',
     titleEn: 'Kutch Video (English)',
     titleHi: 'कच्छ वीडियो (अंग्रेज़ी)',
     lang: 'en',
+    thumbnail: '/videos/kutch.jpeg',
   },
   {
     id: '11VcFvAf2mlZ6wh5iLqLJiHNfFixX0D2g',
     titleEn: 'Kutch Video (Hindi)',
     titleHi: 'कच्छ वीडियो (हिंदी)',
     lang: 'hi',
+    thumbnail: '/videos/kutch.jpeg',
   },
   {
     id: '1-9_joNfmkZVpc26O77s_yp-pDg9r8iQO',
     titleEn: 'Leh Thermal Insulation Magra',
     titleHi: 'लेह थर्मल इंसुलेशन मगरा',
     lang: 'both',
+    thumbnail: '/videos/Leh Thermal Insulation Magra.jpeg',
   },
   {
     id: '1SdVKX2tQLEMF6v1sG8LV26_46J_w1Sqm',
     titleEn: 'Pashmina Wool',
     titleHi: 'पश्मीना ऊन',
     lang: 'both',
+    thumbnail: '/videos/Pashmina video thumbnail.png',
   },
 ];
 
@@ -167,12 +180,19 @@ export default function WoolSuccessStoriesPage() {
                     <button
                       type="button"
                       onClick={() => setPlayingId(video.id)}
-                      className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-gray-800 to-black transition-opacity hover:opacity-95"
+                      className="group relative flex h-full w-full items-center justify-center overflow-hidden transition-opacity"
                       aria-label={
                         language === 'en' ? `Play ${video.titleEn}` : `${video.titleHi} चलाएँ`
                       }
                     >
-                      <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-blue-700 shadow-lg">
+                      <Image
+                        src={video.thumbnail}
+                        alt={title}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/40" />
+                      <span className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-blue-700 shadow-lg transition-transform duration-200 group-hover:scale-110">
                         <svg
                           className="ml-1 h-8 w-8"
                           viewBox="0 0 24 24"
